@@ -1,10 +1,6 @@
 package br.com.myapp.security;
 
-import java.util.Objects;
+public interface SecurityManager {
 
-public class SecurityManager {
-
-    public boolean authenticate(String username, String password){
-        return Objects.equals(username, "A") && Objects.equals(password, "B");
-    }
+    boolean authenticate(String username, String password);
 }
