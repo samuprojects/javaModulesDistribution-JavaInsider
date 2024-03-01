@@ -1,4 +1,4 @@
-package br.com.myapp.app;
+package br.com.myapp.security;
 
 import java.util.Objects;
 
