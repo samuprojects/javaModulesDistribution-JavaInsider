@@ -14,4 +14,8 @@ public class Credentials {
                 .map(Credential::password) // utilizando method reference
                 .orElse(null); // retorna o valor e caso não encontrado retornar null
     }
+
+    public List<Credential> getCredentials() {
+        return credentials;
+    }
 }
