@@ -28,8 +28,8 @@ public class CreatingInstaller {
     * Basta disponibilizar a pasta dist completa que será possível executar a aplicação.
     *
     *
-    *
-    *
+    * No linux funcionou utilizando o separador padrão Unix ":" ao invés do ";" do windows resultando no comando final
+    * jlink --module-path "./out/production/:./securityimpl/lib:%JAVA_HOME%/jmods" --add-modules app,securityimpl --output dist
     *
     * */
 }

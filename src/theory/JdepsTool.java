@@ -20,5 +20,11 @@ public class JdepsTool {
     * jdeps --module-path "./out/production;./securityimpl/lib" --add-modules com.google.gson -s --module securityimpl --multi-release base
     *
     *
+    * No linux funcionou utilizando o separador padrão Unix ":" ao invés do ";" do windows resultando no comando final
+    * comando que informa erro Gson ser multi-release
+    * jdeps --module-path "./out/production:./securityimpl/lib" --add-modules com.google.gson -s --module securityimpl
+    *
+    * correção incluindo o multi-release base
+    * jdeps --module-path "./out/production:./securityimpl/lib" --add-modules com.google.gson -s --module securityimpl --multi-release base
     * */
 }
